@@ -9,6 +9,7 @@
     tools:context=".Home"
     >
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -18,18 +19,16 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="FitApp"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="100dp"
             android:layout_marginLeft="30dp"
-            >
+            android:layout_marginTop="100dp"
+            android:text="HomeFit"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold">
 
         </TextView>
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
