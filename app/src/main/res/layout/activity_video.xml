@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg"
     android:orientation="vertical"
-    tools:context=".Home"
-    >
+    tools:context=".Video">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,11 +17,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="FitApp"
-            android:textSize="35sp"
+            android:text="운동 영상"
+            android:textSize="30dp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="90dp"
             android:layout_marginLeft="30dp"
             >
 
@@ -37,45 +36,38 @@
         android:layout_weight="8"
         android:orientation="vertical">
 
+
+
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/button_workout1"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:paddingRight="150dp"
-            android:text="체크리스트"
-            android:textSize="30dp"
+            android:text="버튼 1"
             android:background="@color/white"
             />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_workout2"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:paddingRight="175dp"
-            android:textSize="30dp"
-            android:text="스톱워치"
+            android:text="버튼2"
             android:background="@color/white"
-          />
+            />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/homebutton"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:paddingRight="175dp"
-            android:textSize="30dp"
-            android:text="운동영상"
-            android:background="@color/white"
-
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="300dp"
+            android:clickable="true"
+            app:backgroundTint="@color/mainblue"
             />
 
 
     </LinearLayout>
+
+
 
 
 

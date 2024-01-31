@@ -13,11 +13,19 @@
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
         <activity
-            android:name=".Home"
+            android:name=".Video"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name=".Stopwatch"
             android:exported="false" />
+        <activity
+            android:name=".Checklist"
+            android:exported="false" />
+
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+
         <activity
             android:name=".signup"
             android:exported="false" />
