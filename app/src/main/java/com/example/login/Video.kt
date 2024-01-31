@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 
 class Video : AppCompatActivity() {
 
@@ -14,12 +15,9 @@ class Video : AppCompatActivity() {
         setContentView(R.layout.activity_video)
         var button1: Button = findViewById(R.id.button_workout1)
         var button2: Button = findViewById(R.id.button_workout2)
-        var Homebutton : Button = findViewById(R.id.homebutton)
+        var Homebutton : ImageButton = findViewById(R.id.home_button)
 
 
-        Homebutton.setOnClickListener{
-            val intent1 = Intent(this,Home::class.java)
-            startActivity(intent1)}
         // 버튼 클릭 이벤트 리스너 설정
         button1.setOnClickListener(View.OnClickListener {
             // 하이퍼링크로 이동하는 Intent 생성
@@ -34,6 +32,9 @@ class Video : AppCompatActivity() {
             // Intent 실행
             startActivity(intent3)
         })
+        Homebutton.setOnClickListener{
+            val intent1 = Intent(this,Home::class.java)
+            startActivity(intent1)}
 
     }
 }
