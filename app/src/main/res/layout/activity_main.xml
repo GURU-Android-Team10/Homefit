@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/bg"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".login">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
-        android:text="앱이름"
+        android:text="Homefit"
         android:textSize="35sp"
         android:textStyle="bold"
         android:textColor="@color/textblack"

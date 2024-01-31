@@ -15,6 +15,7 @@ class signup : AppCompatActivity() {
     private lateinit var pword: EditText
     private lateinit var cpword: EditText
     private lateinit var signupbtn: Button
+    private lateinit var gotologinbtn: Button
     private lateinit var db: DBHelper
 
     @SuppressLint("MissingInflatedId")
@@ -26,6 +27,7 @@ class signup : AppCompatActivity() {
         pword = findViewById(R.id.editTextTextPassword)
         cpword = findViewById(R.id.editTextTextPassword2)
         signupbtn = findViewById(R.id.button3)
+        gotologinbtn = findViewById(R.id.button6)
         db = DBHelper(this)
 
         signupbtn.setOnClickListener {
@@ -52,6 +54,10 @@ class signup : AppCompatActivity() {
                     Toast.makeText(this, "비밀번호가 맞지 않습니다. 다시 입력해주세요.", Toast.LENGTH_SHORT).show()
                 }
             }
+        }
+        gotologinbtn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
