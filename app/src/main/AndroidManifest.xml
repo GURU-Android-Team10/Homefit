@@ -17,10 +17,12 @@
             android:exported="false" />
         <activity
             android:name=".Stopwatch"
-            android:exported="false" />
+            android:exported="false">
+        </activity>
         <activity
             android:name=".Checklist"
-            android:exported="false" />
+            android:exported="false" >
+        </activity>
 
         <activity
             android:name=".Home"
@@ -32,6 +34,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
