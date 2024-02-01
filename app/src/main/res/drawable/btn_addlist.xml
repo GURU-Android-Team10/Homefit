@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- 버튼 눌러진 상태 -->
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="#00FFFFFF"/>
-            <corners android:radius="50dp"/>
+            <solid android:color="@color/subblue"/>
+            <corners android:radius="10dp"/>
         </shape>
     </item>
 
-    <!-- 버튼 기본 상태 -->
     <item android:state_enabled="true">
         <shape android:shape="rectangle">
-            <solid android:color="#00FFFFFF"/>
-            <corners android:radius="50dp"/>
+            <solid android:color="@color/subblue"/>
+            <corners android:radius="10dp"/>
         </shape>
     </item>
 </selector>

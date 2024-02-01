@@ -16,7 +16,6 @@ class signup : AppCompatActivity() {
     private lateinit var pword: EditText
     private lateinit var cpword: EditText
     private lateinit var signupbtn: Button
-    private lateinit var gotologinbtn: Button
 
     //DBHelper 인스턴스
     private lateinit var db: DBHelper
@@ -31,7 +30,6 @@ class signup : AppCompatActivity() {
         pword = findViewById(R.id.editTextTextPassword)
         cpword = findViewById(R.id.editTextTextPassword2)
         signupbtn = findViewById(R.id.button3)
-        gotologinbtn = findViewById(R.id.button6)
         db = DBHelper(this)
 
         // 회원가입 버튼에 대한 클릭 리스너 설정
@@ -44,8 +42,6 @@ class signup : AppCompatActivity() {
             // 입력 필드 중 하나라도 비어 있는지 확인
             if(TextUtils.isEmpty(unametext) || TextUtils.isEmpty(pwordtext) || TextUtils.isEmpty(cpwordtext)){
                 Toast.makeText(this, "아이디와 비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show()
-                val intent = Intent(applicationContext, MainActivity::class.java)
-                startActivity(intent)
             }
             else{
                 // 비밀번호가 일치하는지 확인
@@ -53,6 +49,8 @@ class signup : AppCompatActivity() {
                     // 데이터 삽입이 성공했는지 확인
                     if(savedata==true){
                         Toast.makeText(this, "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, MainActivity::class.java)
+                        startActivity(intent)
                     }
                     else{
                         Toast.makeText(this, "이미 존재하는 아이디입니다.", Toast.LENGTH_SHORT).show()
@@ -62,12 +60,6 @@ class signup : AppCompatActivity() {
                     Toast.makeText(this, "비밀번호가 맞지 않습니다. 다시 입력해주세요.", Toast.LENGTH_SHORT).show()
                 }
             }
-        }
-
-        // "gotologinbtn" 버튼에 대한 클릭 리스너 설정
-        gotologinbtn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
         }
     }
 }
