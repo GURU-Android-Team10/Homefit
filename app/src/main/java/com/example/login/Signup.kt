@@ -8,9 +8,8 @@ import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import org.w3c.dom.Text
 
-class signup : AppCompatActivity() {
+class Signup : AppCompatActivity() {
     // UI 요소 선언
     private lateinit var uname: EditText
     private lateinit var pword: EditText
