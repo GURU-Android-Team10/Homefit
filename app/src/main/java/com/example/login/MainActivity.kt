@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         }
         // 회원가입 버튼에 대한 클릭 리스너 설정
         btnsignup.setOnClickListener {
-            val intent = Intent(this, signup::class.java)
+            val intent = Intent(this, Signup::class.java)
             startActivity(intent)
         }
     }

@@ -29,7 +29,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".signup"
+            android:name=".Signup"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
